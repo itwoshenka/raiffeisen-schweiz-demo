@@ -8,12 +8,12 @@ chatLocationData = {
     sessionStorage.chatBtn='https://demo.spitch.chat/button.php?location=FAQKanton'
     sessionStorage.index2='index2.html'
     sessionStorage.login2='login2.html'
-    sessionStorage.video2='video2.html'
+    sessionStorage.video2='hypothek2.html'
     document.querySelector('.imageChat').src=sessionStorage.chatBtn;
     chatLocationData.location=sessionStorage.locValue;
     document.getElementById('button1').href=sessionStorage.login2;
     document.getElementById('button3').href=sessionStorage.index2;
-    document.getElementById('button2').href=sessionStorage.video2;
+    document.getElementById('button2').href=sessionStorage.hypothek2;
   };
   function videoValidator(){
     if(sessionStorage.locValue){
@@ -21,14 +21,14 @@ chatLocationData = {
         document.querySelector('.imageChat').src=sessionStorage.chatBtn;
         document.getElementById('button1').href=sessionStorage.login2;
         document.getElementById('button3').href=sessionStorage.index2;
-        document.getElementById('button2').href=sessionStorage.video2;
+        document.getElementById('button2').href=sessionStorage.hypothek2;
     }
     else{
         chatLocationData.location="Raiffeisen";
         document.querySelector('.imageChat').src='https://demo.spitch.chat/button.php?location=Raiffeisen';
         document.getElementById('button1').href='login.html';
         document.getElementById('button3').href='index.html';
-        document.getElementById('button2').href='video.html';
+        document.getElementById('button2').href='hypothek.html';
     }
   }
   (function chatBot() {
