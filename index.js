@@ -6,9 +6,9 @@ chatLocationData = {
   function changeScript(){
     sessionStorage.locValue='FAQKanton';
     sessionStorage.chatBtn='https://demo.spitch.chat/button.php?location=FAQKanton'
-    sessionStorage.index2='mainpage2.html'
+    sessionStorage.mainpage2='mainpage2.html'
     sessionStorage.login2='login2.html'
-    sessionStorage.video2='hypothek2.html'
+    sessionStorage.hypothek2='hypothek2.html'
     document.querySelector('.imageChat').src=sessionStorage.chatBtn;
     chatLocationData.location=sessionStorage.locValue;
     document.getElementById('button1').href=sessionStorage.login2;
